@@ -1,134 +1,109 @@
-/* RESET */
+/* ===== 基礎 ===== */
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
   font-family: "Noto Sans TC", sans-serif;
 }
 
 body{
-  background: #f6eee7;
-  color: #3b2f28;
-  line-height: 1.6;
+  background:#f6eee7;
+  color:#3b2f28;
 }
 
-/* HERO */
+/* ===== NAV ===== */
+.nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  z-index:10;
+}
+
+.nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#3b2f28;
+  font-size:14px;
+}
+
+/* ===== HERO（高級關鍵） ===== */
 .hero{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 100vh;
-  padding: 80px 8%;
-  gap: 60px;
+  height:100vh;
+  background:url("images/hero.jpg") center/cover no-repeat;
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
-/* 左文字 */
-.hero-text{
-  flex: 1;
+/* 黑白灰柔化遮罩 */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(246,238,231,0.65);
 }
 
-/* 品牌小字 */
-.brand{
-  letter-spacing: 3px;
-  opacity: 0.6;
-  margin-bottom: 10px;
+/* 內容層 */
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
 }
 
-/* 主標 */
+/* 小字 */
+.sub{
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+/* 主標（最重要） */
 h1{
-  font-size: 64px;
-  margin-bottom: 10px;
+  font-size:72px;
+  letter-spacing:6px;
+  font-weight:500;
 }
 
 /* 副標 */
 h2{
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-size:28px;
+  margin-top:10px;
+  font-weight:400;
 }
 
-/* slogan */
-.slogan{
-  font-size: 16px;
-  opacity: 0.8;
-  margin-bottom: 30px;
+/* 英文 */
+.en{
+  margin-top:20px;
+  font-size:14px;
+  opacity:0.7;
 }
 
 /* 按鈕 */
 .btn{
-  display: inline-block;
-  background: #9b6b53;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 28px;
+  background:#9b6b4f;
+  color:white;
+  border-radius:999px;
+  text-decoration:none;
 }
 
-.btn:hover{
-  background: #7f5240;
+/* ===== 圖片區（重點：不要滿版爆掉） ===== */
+.image-section{
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
 }
 
-/* 右圖片 */
-.hero-image{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img{
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-/* ABOUT */
-.about{
-  padding: 100px 10%;
-  text-align: center;
-}
-
-.about h3{
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-/* BOOKING */
-.booking{
-  padding: 100px 10%;
-  text-align: center;
-  background: #fff;
-}
-
-/* FOOTER */
-footer{
-  text-align: center;
-  padding: 40px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-
-/* RWD */
-@media (max-width: 768px){
-
-  .hero{
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 6%;
-  }
-
-  h1{
-    font-size: 40px;
-  }
-
-  h2{
-    font-size: 20px;
-  }
-
-  .hero-image img{
-    max-width: 320px;
-  }
+.image-section img{
+  width:100%;
+  max-width:900px;
+  border-radius:20px;
+  object-fit:cover;
 }

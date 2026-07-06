@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>如果的室 if atelier｜美學療癒所</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+
+    <p class="brand">if atelier</p>
+
+    <h1>如果的室</h1>
+
+    <h2>美學療癒所</h2>
+
+    <p class="slogan">
+      讓保養變成一種安靜的儀式<br>
+      Every woman deserves a place to heal
+    </p>
+
+    <a href="#booking" class="btn">立即預約</a>
+
+  </div>
+
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+
+  <h3>ABOUT</h3>
+  <h2>關於如果的室</h2>
+
+  <p>
+    如果生活可以慢一點，<br>
+    如果能有一個地方讓妳放下疲憊，<br>
+    那就是如果的室。
+  </p>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+
+  <h3>SERVICES</h3>
+  <h2>療癒服務</h2>
+
+  <div class="card">
+    <h4>韓式皮膚管理</h4>
+    <p>深層清潔、保濕修護、讓肌膚回到乾淨狀態。</p>
+    <b>$1200 起</b>
+  </div>
+
+  <div class="card">
+    <h4>日式美甲</h4>
+    <p>貓眼 / 碎鑽 / 氣質款式設計。</p>
+    <b>$1000 起</b>
+  </div>
+
+  <div class="card">
+    <h4>臉部療癒保養</h4>
+    <p>放鬆緊繃、改善氣色、讓臉回到自然狀態。</p>
+    <b>價格請洽詢</b>
+  </div>
+
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+
+  <h3>BOOKING</h3>
+  <h2>線上預約</h2>
+
+  <form onsubmit="sendBooking(event)">
+
+    <input id="name" placeholder="姓名" required>
+    <input id="phone" placeholder="電話" required>
+
+    <select id="service" required>
+      <option value="">選擇服務</option>
+      <option>韓式皮膚管理</option>
+      <option>日式美甲</option>
+      <option>臉部療癒保養</option>
+    </select>
+
+    <input id="date" type="date" required>
+    <input id="time" type="time" required>
+
+    <textarea id="note" placeholder="備註（例如：粉刺 / 乾燥 / 暗沉）"></textarea>
+
+    <button type="submit">送出 LINE 預約</button>
+
+  </form>
+
+</section>
+
+<footer>
+如果的室 if atelier｜美學療癒所
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

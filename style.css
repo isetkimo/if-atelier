@@ -2,7 +2,7 @@
   --bg:#f6f1ea;
   --text:#2c2c2c;
   --soft:#b89b7a;
-  --gray:#666;
+  --gray:#6b6b6b;
 }
 
 *{
@@ -25,40 +25,41 @@ nav{
   width:100%;
   display:flex;
   justify-content:space-between;
-  padding:20px 40px;
-  background:rgba(246,241,234,0.8);
+  padding:18px 40px;
+  background:rgba(246,241,234,0.85);
   backdrop-filter: blur(10px);
   z-index:100;
 }
 
 nav a{
-  margin-left:20px;
+  margin-left:18px;
   text-decoration:none;
   color:var(--text);
+  font-size:14px;
 }
 
-/* HERO */
+/* HERO（修正不會亂） */
 .hero{
-  height:100vh;
+  min-height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
+  padding:120px 20px 80px;
 }
 
 .hero h1{
-  font-size:48px;
+  font-size:54px;
   font-weight:300;
 }
 
-.hero p{
-  font-size:20px;
-  margin:10px 0;
+.hero .sub{
+  letter-spacing:2px;
+  color:var(--gray);
 }
 
-.hero span{
-  display:block;
-  margin:10px 0 30px;
+.hero .en{
+  margin:10px 0 25px;
   color:var(--gray);
 }
 
@@ -77,14 +78,25 @@ nav a{
   transform:translateY(-3px);
 }
 
-/* ABOUT */
+.btn-outline{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  border:1px solid var(--soft);
+  color:var(--soft);
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* ABOUT（修正不貼邊） */
 .about{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
   max-width:1100px;
   margin:auto;
-  padding:100px 20px;
+  padding:120px 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
 }
 
 .about img{
@@ -95,7 +107,7 @@ nav a{
 /* SERVICES */
 .services{
   text-align:center;
-  padding:100px 20px;
+  padding:120px 20px;
 }
 
 .grid{
@@ -109,42 +121,45 @@ nav a{
 .card{
   background:white;
   padding:30px;
-  border-radius:15px;
+  border-radius:14px;
   transition:0.3s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-6px);
 }
 
 /* CTA */
 .cta{
   text-align:center;
-  padding:100px 20px;
+  padding:120px 20px;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
   padding:40px;
+  font-size:12px;
   color:var(--gray);
 }
 
-/* RWD */
+/* RWD（修好你現在怪掉問題） */
 @media(max-width:768px){
+
+  nav{
+    padding:14px 20px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
   .about{
     grid-template-columns:1fr;
+    gap:30px;
   }
 
   .grid{
     grid-template-columns:1fr;
-  }
-
-  nav{
-    padding:15px 20px;
-  }
-
-  .hero h1{
-    font-size:32px;
   }
 }

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://isetkimo.github.io/if-atelier/sitemap.xml

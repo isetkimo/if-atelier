@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Noto Sans TC",sans-serif;
+}
+
+body{
+background:#f6eee7;
+color:#3b2f28;
+line-height:1.6;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url("images/hero.jpg") center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+position:relative;
+color:white;
+padding:20px;
+max-width:420px;
+}
+
+.brand{
+letter-spacing:4px;
+opacity:.8;
+font-size:13px;
+}
+
+.hero h1{
+font-size:52px;
+margin:10px 0;
+}
+
+.hero h2{
+font-weight:300;
+letter-spacing:4px;
+}
+
+.slogan{
+margin:25px 0;
+line-height:2;
+font-size:16px;
+}
+
+.btn{
+display:inline-block;
+background:#b07a5a;
+color:white;
+padding:14px 30px;
+border-radius:999px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTION */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h3{
+letter-spacing:3px;
+color:#a07a62;
+font-size:12px;
+}
+
+h2{
+margin:10px 0 25px;
+font-size:28px;
+}
+
+/* CARD */
+.card{
+background:white;
+margin:15px 0;
+padding:20px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:left;
+}
+
+.card h4{
+color:#7a5240;
+margin-bottom:10px;
+}
+
+.card b{
+color:#b07a5a;
+}
+
+/* FORM */
+form{
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #e0cdbf;
+border-radius:10px;
+font-size:14px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#b07a5a;
+color:white;
+border:0;
+border-radius:999px;
+font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+padding:25px;
+text-align:center;
+background:#e7d7cc;
+font-size:13px;
+}

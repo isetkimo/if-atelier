@@ -1,139 +1,138 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Noto Sans TC",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-body{
-background:#f6eee7;
-color:#3b2f28;
-line-height:1.6;
+body {
+  background: #f6eee7;
+  color: #3b2f28;
 }
 
-/* HERO */
-.hero{
-height:100vh;
-background:url("images/hero.jpg") center/cover no-repeat;
-position:relative;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") center center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
-.overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.35);
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.25),
+    rgba(0,0,0,.55)
+  );
 }
 
-.hero-content{
-position:relative;
-color:white;
-padding:20px;
-max-width:420px;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 24px;
+  max-width: 520px;
 }
 
-.brand{
-letter-spacing:4px;
-opacity:.8;
-font-size:13px;
+.brand {
+  letter-spacing: 5px;
+  font-size: 14px;
+  opacity: .85;
 }
 
-.hero h1{
-font-size:52px;
-margin:10px 0;
+.hero h1 {
+  font-size: 60px;
+  margin: 18px 0 8px;
 }
 
-.hero h2{
-font-weight:300;
-letter-spacing:4px;
+.hero h2 {
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-size: 24px;
 }
 
-.slogan{
-margin:25px 0;
-line-height:2;
-font-size:16px;
+.slogan {
+  margin: 28px 0;
+  line-height: 2;
+  font-size: 18px;
 }
 
-.btn{
-display:inline-block;
-background:#b07a5a;
-color:white;
-padding:14px 30px;
-border-radius:999px;
-text-decoration:none;
-font-weight:bold;
+.btn {
+  display: inline-block;
+  background: #b07a5a;
+  color: white;
+  padding: 15px 34px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* SECTION */
-section{
-padding:60px 20px;
-text-align:center;
+section {
+  padding: 70px 22px;
+  text-align: center;
 }
 
-h3{
-letter-spacing:3px;
-color:#a07a62;
-font-size:12px;
+h3 {
+  letter-spacing: 4px;
+  color: #a07a62;
+  font-size: 13px;
 }
 
-h2{
-margin:10px 0 25px;
-font-size:28px;
+h2 {
+  margin: 12px 0 28px;
+  font-size: 32px;
 }
 
-/* CARD */
-.card{
-background:white;
-margin:15px 0;
-padding:20px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-text-align:left;
+.card,
+form {
+  max-width: 760px;
+  margin: 18px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 22px;
+  box-shadow: 0 14px 35px rgba(0,0,0,.08);
+  text-align: left;
 }
 
-.card h4{
-color:#7a5240;
-margin-bottom:10px;
+.card h4 {
+  color: #7a5240;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.card b{
-color:#b07a5a;
+.card b {
+  color: #b07a5a;
 }
 
-/* FORM */
-form{
-background:white;
-padding:20px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 9px 0;
+  border: 1px solid #e0cdbf;
+  border-radius: 12px;
+  font-size: 16px;
 }
 
-input,select,textarea{
-width:100%;
-padding:12px;
-margin:8px 0;
-border:1px solid #e0cdbf;
-border-radius:10px;
-font-size:14px;
+button {
+  width: 100%;
+  padding: 15px;
+  background: #b07a5a;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-button{
-width:100%;
-padding:14px;
-background:#b07a5a;
-color:white;
-border:0;
-border-radius:999px;
-font-weight:bold;
-}
-
-/* FOOTER */
-footer{
-padding:25px;
-text-align:center;
-background:#e7d7cc;
-font-size:13px;
+footer {
+  padding: 28px;
+  text-align: center;
+  background: #e7d7cc;
 }

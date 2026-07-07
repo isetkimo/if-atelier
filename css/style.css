@@ -86,3 +86,66 @@
         transform:translateY(-18px);
     }
 }
+
+/* ===== If Atelier V5 Hero 按鈕最終修正版 ===== */
+
+.hero-actions{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:16px !important;
+    margin-top:36px !important;
+    width:100% !important;
+}
+
+.hero-actions .btn,
+.hero-actions .nail-line{
+    width:85% !important;
+    max-width:310px !important;
+    height:56px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    border-radius:999px !important;
+
+    font-size:16px !important;
+    letter-spacing:2px !important;
+
+    box-sizing:border-box !important;
+}
+
+
+/* 美甲專屬預約 */
+.hero-actions .nail-line{
+    border:1px solid rgba(255,255,255,.55) !important;
+    background:rgba(255,255,255,.16) !important;
+    backdrop-filter:blur(10px);
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+
+/* 查看服務 */
+.hero-actions .btn.ghost{
+    border:1px solid rgba(255,255,255,.55) !important;
+    background:rgba(255,255,255,.12) !important;
+    color:#fff !important;
+}
+
+
+/* 手機置中 */
+@media(max-width:520px){
+
+    .hero-actions{
+        align-items:center !important;
+    }
+
+    .hero-actions .btn,
+    .hero-actions .nail-line{
+        width:85% !important;
+    }
+
+}

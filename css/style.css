@@ -23,14 +23,8 @@
     text-decoration:none;
     transition:.3s;
     box-sizing:border-box;
-}
 
-/* 主預約按鈕 */
-.hero-actions .btn.primary{
-    background:rgba(255,255,255,.18);
-    color:#fff;
-    border:1px solid rgba(255,255,255,.52);
-    backdrop-filter:blur(10px);
+
 }
 /* 皮膚管理、美甲按鈕一致 */
 .hero-actions .btn.primary,

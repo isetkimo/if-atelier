@@ -32,13 +32,14 @@
     border:1px solid rgba(255,255,255,.52);
     backdrop-filter:blur(10px);
 }
-
-/* 美甲專屬預約 */
+/* 皮膚管理、美甲按鈕一致 */
+.hero-actions .btn.primary,
 .hero-actions .nail-line{
-    border:1px solid rgba(255,255,255,.52);
-    background:rgba(255,255,255,.18);
+    background:rgba(255,255,255,.18) !important;
+    border:1px solid rgba(255,255,255,.52) !important;
+    color:#fff !important;
     backdrop-filter:blur(10px);
-    color:#fff;
+    box-shadow:none !important;
 }
 
 /* 查看服務 */

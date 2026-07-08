@@ -26,6 +26,7 @@
 
 
 }
+
 /* 皮膚管理、美甲按鈕一致 */
 .hero-actions .btn.primary,
 .hero-actions .nail-line{
@@ -143,4 +144,16 @@
         width:85% !important;
     }
 
+}
+
+/* 三個預約按鈕統一玻璃透明 */
+
+.hero-actions .btn.primary,
+.hero-actions .nail-line,
+.float-line{
+    background:rgba(255,255,255,.18) !important;
+    border:1px solid rgba(255,255,255,.55) !important;
+    color:#fff !important;
+    backdrop-filter:blur(10px) !important;
+    box-shadow:none !important;
 }

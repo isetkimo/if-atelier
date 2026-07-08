@@ -156,15 +156,3 @@
     backdrop-filter:blur(10px) !important;
     box-shadow:none !important;
 }
-/* 強制全部預約按鈕玻璃透明 */
-button,
-.hero-actions a,
-.hero-actions .btn,
-.hero-actions .nail-line,
-.float-line{
-    background:rgba(255,255,255,.18) !important;
-    border:1px solid rgba(255,255,255,.55) !important;
-    color:white !important;
-    backdrop-filter:blur(10px) !important;
-    box-shadow:none !important;
-}

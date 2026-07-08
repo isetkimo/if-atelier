@@ -60,13 +60,10 @@
     transform:translateY(-24px);
 }
 
-/* 浮動 LINE 按鈕透明化 */
+/* 浮動 LINE 按鈕改成品牌奶茶色 */
 .float-line{
-    background:rgba(255,255,255,.18) !important;
-    border:1px solid rgba(255,255,255,.55) !important;
-    color:#fff !important;
-    backdrop-filter:blur(10px) !important;
-    box-shadow:none !important;
+    background:#b89272 !important;
+    box-shadow:0 18px 38px rgba(184,146,114,.28) !important;
 }
 
 @media(max-width:520px){
